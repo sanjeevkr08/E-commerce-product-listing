@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Bluei10 Collection</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Bluei10 COLLECTION</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+     
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-listing">
+      <h1>Products</h1>
+      <div class="filter">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing-male">Clothing - Male</option>
+          <option value="clothing-female">Clothing - Female</option>
+          <option value="accessories">Accessories</option>
+        </select>
+        
+        <label for="price-range">Max Price:</label>
+        <input type="range" id="price-range" min="0" max="300" value="300">
+        <span id="price-value">$300</span>
+      </div>
+      <div class="products-grid">
+        <!-- Example Products -->
+        
+        <div class="product" data-category="electronics" data-name="Honor 90 5G (Diamond Silver, 256 GB)  (8 GB RAM)" data-price="100" data-image="assets/honour.jpg.webp" data-description="200MP Ultra-Clear Rear Camera, Master of Photography: HONOR 90 features a 200MP Ultra-Clear Main Camera with the largest 1/1.4-inch sensor in the segment, a 12MP Ultra Wide and Macro 2-in-1 Camera, and a 2MP Depth Camera and a 50MP Selfie camera and 100° wide FOV hardware to capture exquisite photos and videos. 120Hz Quad-Curved Floating AMOLED Display">
+          <img src="assets/honour.jpg.webp" alt="Mobile">
+          <h3>Honor 90 5G</h3>
+          <p>$100</p>
+        </div>
+        <div class="product" data-category="electronics" data-name="SAMSUNG Galaxy S23 FE (Graphite, 128 GB)  (8 GB RAM)" data-price="150" data-image="assets/samsung.jpg" data-description="y S23 FE opens the door for more people to experience the extraordinary. With its long-lasting power and stunning night shots, the phone becomes your gateway to lasting epic memories.">
+          <img src="assets/samsung.jpg" alt="Mobile">
+          <h3>SAMSUNG FE 23</h3>
+          <p>$150</p>
+        </div>
+        <div class="product" data-category="electronics" data-name="Headset" data-price="50" data-image="assets/aroma.jpg" data-description="Ranger 50 Hours* Playtime |Perfect for Music | Dual Pairing Mode Bluetooth Headset  (Green, True Wireless)">
+          <img src="assets/aroma.jpg" alt="Aroma NB140">
+          <h3>Aroma NB140</h3>
+          <p>$200</p>
+        </div>
+        <div class="product" data-category="electronics" data-name="boAt Rockerz" data-price="50" data-image="assets/bluetoot headhione.jpg" data-description="25 w/ 25 hrs Playtime,40 mm Drivers, BEAST Mode,ENx Tech & Dual Pairing Bluetooth Headset  (Oceana Blue, On the Ear)">
+          <img src="assets/bluetoot headhione.jpg" alt="bluetooth headphone">
+          <h3>boAt Rockerz</h3>
+          <p>$50</p>
+        </div>
+        <div class="product" data-category="electronics" data-name="Apple iPhone 15 (Blue, 128 GB)" data-price=400" data-image="assets/iphone 15.jpg" data-description="Experience the iPhone 15 – your dynamic companion. Dynamic Island ensures you stay connected, bubbling up alerts seamlessly while you're busy. Its durable design features infused glass and aerospace-grade aluminum, making it dependable and resistant to water and dust. Capture life with precision using the 48 MP Main Camera, perfect for any shot. Powered by the A16 Bionic Processor">
+          <img src="assets/iphone 15.jpg" alt="Apple iPhone 15 (Blue, 128 GB)">
+          <h3>Apple iPhone 15 </h3>
+          <p>$400</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="shirt" data-price="50" data-image="assets/deemoon-original.jpg" data-description="Men Regular Fit Solid Ribbed Collar Casual Shirt">
+          <img src="assets/deemoon-original.jpg" alt="deemon-orginal shirt">
+          <h3>deemon-orginal shirt</h3>
+          <p>$50</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="Shirt" data-price="70" data-image="assets/shirt-2.jpg" data-description="high quality orginal fabrics casual">
+          <img src="assets/shirt-2.jpg" alt="Clothing - Male ">
+          <h3>Clothing - Male 2</h3>
+          <p>$70</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="printed Shirt" data-price="60" data-image="assets/printed shirt.jpg" data-description="prinnted licra shirt with best fit ">
+          <img src="assets/printed shirt.jpg" alt="Clothing - Male 3">
+          <h3>party shirt</h3>
+          <p>$60</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="Clothing - Male 4" data-price="80" data-image="assets/men regular chech shirt.jpg" data-description="mens regular casual wear check shirt ">
+          <img src="assets/men regular chech shirt.jpg" alt="Clothing - Male 4">
+          <h3>men Regular CHECK</h3>
+          <p>$80</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="tshirt" data-price="90" data-image="assets/tshirt.jpg" data-description="round color tshirt with good fabrics and style">
+          <img src="assets/tshirt.jpg" alt="Clothing - Male 5">
+          <h3>tshirt</h3>
+          <p>$30</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="combo tshirt " data-price="40" data-image="assets/pack of 4 tshirt.jpg" data-description="four combo tshirt with best fabrics and style">
+          <img src="assets/pack of 4 tshirt.jpg" alt="Clothing - Male 6">
+          <h3>4-combo tshirt</h3>
+          <p>$40</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="Combo tshirt " data-price="110" data-image="assets/combo tshirt.webp" data-description="male combo tshirt on low prize">
+          <img src="assets/combo tshirt.webp" alt="Clothing - Male 7">
+          <h3>mens combo tshirt</h3>
+          <p>$30</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="jacket" data-price="130" data-image="assets/winter jacket.jpg" data-description="mens winter jacket 100% silk , provides hot in winter and snowfall">
+          <img src="assets/winter jacket.jpg" alt="Clothing - Male 8">
+          <h3>Winter jacket</h3>
+          <p>$130</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="casual jacket" data-price="75" data-image="assets/casual jacket.jpg" data-description="mens casual jacket to wear in party or fashion show">
+          <img src="assets/casual jacket.jpg" alt="Clothing - Male 9">
+          <h3>Casual-jacket</h3>
+          <p>$75</p>
+        </div>
+        <div class="product" data-category="clothing-male" data-name="Bomber jacket" data-price="95" data-image="assets/bomber jacket.jpg" data-description="mens bomber jacket for any season">
+          <img src="assets/bomber jacket.jpg" alt="Clothing - Male 10">
+          <h3>Bomber-jacket</h3>
+          <p>$95</p>
+        </div>
+
+        <div class="product" data-category="clothing-female" data-name="Rayon kurti" data-price="80" data-image="assets/cotton-rayon kurti.jpg" data-description="Women Cotton Rayon Kurti Pant Set">
+          <img src="assets/cotton-rayon kurti.jpg" alt="Clothing - Female 1">
+          <h3>Rayon-kurti</h3>
+          <p>$80</p>
+        </div>
+        <div class="product" data-category="clothing-female" data-name="Clothing - Female 2" data-price="90" data-image="assets/w-2.jpg" data-description="Women Printed Viscose Rayon A-line Kurta  ">
+          <img src="assets/w-2.jpg" alt="Clothing - Female 2">
+          <h3>Clothing - Female 2</h3>
+          <p>$90</p>
+        </div>
+        <div class="product" data-category="clothing-female" data-name="Clothing - Female 3" data-price="70" data-image="assets/w3.jpg" data-description="Woven Kanjivaram Pure Silk, Art Silk Saree for Casual, Party & Festive, Wedding, Wedding & Festive">
+          <img src="assets/w3.jpg" alt="Clothing - Female 3">
+          <h3>Kanjivaram saree</h3>
+          <p>$70</p>
+        </div>
+        <div class="product" data-category="clothing-female" data-name="Cotton Silk Saree " data-price="65" data-image="assets/w4.jpg" data-description="Luxurious FabricCrafted from high-quality fabric, this saree can offer a smooth and soft touch, enhancing your comfort. And, thanks to its breathable material, it can keep you cool during warm events">
+          <img src="assets/w4.jpg" alt="Cotton Silk Saree ">
+          <h3>Cotton Silk Saree </h3>
+          <p>$65</p>
+        </div>
+        <div class="product" data-category="clothing-female" data-name="Graphic Print Bollywood Crepe" data-price="85" data-image="assets/w5.jpg" data-description="Graphic Print Bollywood Crepe, Pure Silk Saree  (Orange, White, Green)">
+          <img src="assets/w5.jpg" alt="Print Bollywood Crepe">
+          <h3>Graphic Print Bollywood Crepe</h3>
+          <p>$85</p>
+        </div>
+        
+
+        <div class="product" data-category="accessories" data-name="Car Cleaning Cloth" data-price="20" data-image="assets/A1.jpg" data-description="e-generix Micro fiber car cloth 800GSM Microfiber Car Cleaning Cloth for Detailing & Polishing 800 GSM 40x30 cm Vehicle Interior Cleaner  (1000 ml)">
+          <img src="assets/A1.jpg" alt="Car Cleaning Cloth">
+          <h3>Car Cleaning Cloth</h3>
+          <p>$20</p>
+        </div>
+        <div class="product" data-category="accessories" data-name=" car Bed Inflatable Mattress" data-price="30" data-image="assets/A2.jpg" data-description="Voroly car Bed Inflatable Mattress air Bed Travel Camping with 2 Air Pillows and Pump car accesories universal for car inflatable bed Car Inflatable Bed  (2 Series)">
+          <img src="assets/A2.jpg" alt="Accessories 2">
+          <h3> car Bed Inflatable Mattress</h3>
+          <p>$30</p>
+        </div>
+        <div class="product" data-category="accessories" data-name="mobile phone charms" data-price="15" data-image="assets/A3.jpg" data-description="Wide Application : This keychain charms suitable for Purse, Ear-pods, Phones, Camera, Mp3, Keychains, ID Cards, Pen Drive, Airpods Case, Key, USB Drive, Mobile, U Disks, iPod, Flashes, Lightweight Electronic Accessories, Handbags, Other Items Material :">
+          <img src="assets/A3.jpg" alt=" phone charms">
+          <h3>mobile phone charms</h3>
+          <p>$15</p>
+        </div>
+        <div class="product" data-category="accessories" data-name="phonecharm" data-price="25" data-image="assets/A4.jpg" data-description="Beaded Phone Chain is Handmade and carefully designed with colorful beads to give it a Fashionable and Unique look">
+          <img src="assets/A4.jpg" alt="phonecharm ">
+          <h3> phonecharm </h3>
+          <p>$25</p>
+        </div>
+        <div class="product" data-category="accessories" data-name="lanyard for phone" data-price="35" data-image="assets/A5.jpg" data-description=" Durable Pad, And 1x Neck Lanyard That Can Be Adjusted To Crossbody. Nylon Lanyard Thickness is 0.7mm, It Will Not Affect The Wire & Wireless Charging Function Of The Mobile Phone.">
+          <img src="assets/A5.jpg" alt="lanyard for phone">
+          <h3>lanyard for phone</h3>
+          <p>$35</p>
+        </div>
+        <div class="product" data-category="accessories" data-name="WILDWINGS " data-price="40" data-image="assets/A6.jpg" data-description="Men Trendy, Evening/Party, Casual, Formal Brown Genuine Leather RFID Wallet  (9 Card Slots)">
+          <img src="assets/A6.jpg" alt="WILDWINGS ">
+          <h3>WILDWINGS </h3>
+          <p>$40</p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bluei10 Collection</p>
+  </footer>
+
+  <script>
+    function filterProducts() {
+      const category = sessionStorage.getItem('selectedCategory') || document.getElementById('category').value;
+      const maxPrice = parseInt(sessionStorage.getItem('maxPrice')) || parseInt(document.getElementById('price-range').value, 10);
+      document.getElementById('price-value').textContent = '$' + maxPrice;
+  
+      const products = document.querySelectorAll('.product');
+      products.forEach(product => {
+        const productPrice = parseInt(product.dataset.price, 10);
+        const isCategoryMatch = (category === 'all' || product.dataset.category === category);
+        const isPriceMatch = (productPrice <= maxPrice);
+        
+        if (isCategoryMatch && isPriceMatch) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  
+    document.getElementById('category').addEventListener('change', function() {
+      const selectedCategory = this.value;
+      sessionStorage.setItem('selectedCategory', selectedCategory);
+      filterProducts();
+    });
+  
+    document.getElementById('price-range').addEventListener('input', function() {
+      const maxPrice = parseInt(this.value, 10);
+      sessionStorage.setItem('maxPrice', maxPrice);
+      filterProducts();
+    });
+  
+    document.querySelectorAll('.product').forEach(product => {
+      product.addEventListener('click', function() {
+        const name = product.dataset.name;
+        const price = product.dataset.price;
+        const image = product.dataset.image;
+        const description = product.dataset.description;
+  
+        localStorage.setItem('productName', name);
+        localStorage.setItem('productPrice', price);
+        localStorage.setItem('productImage', image);
+        localStorage.setItem('productDescription', description);
+  
+        window.location.href = 'product-details.html';
+      });
+    });
+  
+    // Initial filter to apply any saved filters
+    filterProducts();
+  </script>
+  
+</body>
+</html>

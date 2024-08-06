@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - Bluei10 Collection</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .product-detail {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .product-detail img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .product-detail h1 {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+    .product-detail p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Bluei10 COLLECTION</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-detail">
+      <img id="product-image" src="" alt="Product Image">
+      <h1 id="product-name"></h1>
+      <p id="product-description"></p>
+      <p id="product-price"></p>
+      <a href="products.html" class="back-button">Back to Products</a>
+    </section>
+  </main>
+
+
+  <script>
+    // Retrieve product information from localStorage
+    const productName = localStorage.getItem('productName');
+    const productPrice = localStorage.getItem('productPrice');
+    const productImage = localStorage.getItem('productImage');
+    const productDescription = localStorage.getItem('productDescription');
+
+    // Set the content of the page
+    document.getElementById('product-name').textContent = productName;
+    document.getElementById('product-price').textContent = `$${productPrice}`;
+    document.getElementById('product-image').src = productImage;
+    document.getElementById('product-description').textContent = productDescription;
+  </script>
+
+</body>
+</html>
+
+
+  <footer>
+    <p>&copy; 2024 Bluei10 Collection</p>
+  </footer

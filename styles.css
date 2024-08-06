@@ -1,0 +1,54 @@
+.product{
+  background-color: blanchedalmond;
+}
+.about, .contact {
+    padding: 20px;
+    background-image: url('assets/shopping\ cart-1.jpeg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  }
+  
+  .about p, .contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  .product-details{
+    background-color: antiquewhite;
+  }

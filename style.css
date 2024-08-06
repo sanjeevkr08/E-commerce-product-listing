@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .user-actions a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #333;
+  }
+  
+  .hero {
+    background: url('assets/Light\ Pink\ Wallpapers\ HD.jpeg' ) no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  
+  .hero-text p {
+    font-size: 24px;
+  }
+  
+  .categories {
+    padding: 20px;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .category-list a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .product-listing {
+    padding: 20px;
+  }
+  
+  .filter {
+    margin-bottom: 20px;
+  }
+  
+  .products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+  }
+  
+  footer {
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f8f8;
+  }
+  
+  .social-links {
+      margin-top: 10px;
+  }
+  
+  .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007BFF; /* Bootstrap primary color */
+  }
+  
+  .social-links a:hover {
+      text-decoration: underline;
+  }
+  
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+  }
+  
