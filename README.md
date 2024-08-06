@@ -1,11 +1,11 @@
 # E-commerce-product-listing
+
 E-commerce product listing website using HTML, CSS and Javascript to list the product
-E-commerce Product Listing
 
 Name: [Sanjeev kumar]
 Course Name: [full-stack web development]
 Instructor's Name: [Rohit sir]
-Submission Date: [Submission Date]
+Submission Date: [6th august 2024]
 
 **Introduction**
 
@@ -17,7 +17,8 @@ The project is organized into the following folder structure:
 
 /ecommerce-product-listing
 │
-├── index.html               # Homepage
+├── index.html 
+
 ├── product.html             # Product details page (optional)
 ├── /css                     # Contains CSS files
 │   └── styles.css          # Main stylesheet
